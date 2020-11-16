@@ -1,0 +1,29 @@
+/**
+ * Full website rules
+ */
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-family-sans-serif;
+  background-color: $background-color;
+  color: $text-color;
+  background-image: url($background-image);
+  background-size: cover;
+  background-repeat: no-repeat;
+  // background-position: center;
+  background-color: $background-color;
+
+}
+
+.link {
+  color: $text-color;
+  text-decoration-color: $secondary-color;
+
+  &:hover { color: $secondary-color; }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "eines2",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Roger Medico CV from uoc-boilerplate base",
+  "scripts": {
+    "parcel:dev": "parcel src/index.html -p 8123 --open",
+    "parcel:build": "parcel build src/index.html --public-url ./ --out-dir dist --no-source-maps --no-cache",
+    "stylelint": "stylelint src/**/*.scss",
+    "clean": "rimraf dist .cache .cache-loader",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean stylelint parcel:build",
+    "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogermedico/eines2.git"
+  },
+  "author": {
+    "name": "Roger Medico Piqué",
+    "email": "rmedico@uoc.edu"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rogermedico/eines2/issues"
+  },
+  "homepage": "https://eines2uoc.netlify.com",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "npm-run-all": "^4.1.5",
+    "parcel-bundler": "^1.12.4",
+    "parcel-plugin-imagemin": "^4.0.1",
+    "postcss-clean": "^1.1.0",
+    "postcss-preset-env": "^6.7.0",
+    "rimraf": "^2.7.1",
+    "sass": "^1.27.0",
+    "stylelint": "^13.7.2",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
+    "bootstrap": "^4.5.3",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  }
+}

@@ -1,0 +1,81 @@
+.navbar-logo {
+  height: 60px;
+  width: auto;
+}
+
+.navbar-title{
+  font-size: 1.4rem;
+  font-family: $font-family-serif;
+}
+
+.nav-list {
+  border: 3px solid $nav-bar-color;
+    border-radius: 10px;
+    background: rgba(#000,.15);
+    width: 30%;
+    @media (min-width: $md) { 
+      width: initial;
+      border: none;
+      background: none;
+    }
+}
+
+.nav-item {
+  border: none;
+  background: none;
+  &:hover{ background: none }
+
+  @media (min-width: $md) { 
+    border: 3px solid $nav-bar-color;
+    border-radius: 10px;
+    background: rgba(#000,.15);
+    &:hover{
+      background: rgba(#000,.25);
+    }
+  }
+
+}
+
+.nav-link {
+  font-family: $font-family-serif;
+  font-size: 1.1rem;
+  padding: .2rem;
+  
+}
+
+.active {
+  font-weight: 600;
+}
+
+
+
+
+
+// .navbar-brand {
+//   display:none;
+//   @media (min-width: 768px) {
+//     display: inline;
+//   }
+// }
+
+.page-title {
+  display: none;
+  @media (min-width: 768px) {
+    display: block;
+  }
+
+}
+
+
+.login-img {
+  width: 200px;
+}
+
+.contact-social-img {
+  max-width: 50px;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: rgba(108, 117, 125, 0.9);
+}

@@ -1,0 +1,37 @@
+/**
+ * Variables file
+ */
+
+@use 'sass:color';
+
+/* Tell fontawesome where his files are located */
+$fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
+
+/* Define media queries breakpoints */
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+/* Define colors */
+$main-color: #ffc600;
+$secondary-color: #0077b6;
+$text-color: #353535;
+$text-color-light: color.scale($text-color, $lightness: 30%);
+$nav-bar-color: #fff;
+$background-color: #fff;
+
+/* Define fonts */
+$font-family-sans-serif: 'Roboto', arial, helvetica, sans-serif;
+$font-family-serif: 'Roboto Slab', georgia, times, serif;
+
+/* Define background img */
+$background-image: '../images/background.jpg';
+
+/* bootstrap overrides */
+$navbar-light-color: $nav-bar-color;
+$navbar-light-hover-color: $nav-bar-color;
+$navbar-light-active-color: $nav-bar-color;
+$navbar-nav-link-padding-x:         1rem;
+$navbar-light-toggler-border-color: $nav-bar-color;
