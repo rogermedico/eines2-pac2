@@ -10,10 +10,11 @@
   <title>Arya Music Festival</title>
   <link rel="stylesheet" href="./assets/styles/main.scss">
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
+  <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-md navbar-light bg-transparent sticky-top">
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
 
     <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarToggler"
       aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,28 +22,22 @@
     </button>
 
     <div class="navbar-brand ml-auto mr-0">
-      <a href="./index.html">
-        <img class="navbar-logo" src="./assets/images/logo.png" alt="logo">
+      <a class="nav__brand-link" href="./index.html">
+        <img class="nav__brand-img" src="./assets/images/logo2.png" alt="logo">
       </a>
-      <span class="d-none d-md-inline navbar-title">
-        Arya Music Festival
-      </span>
+      <!-- <span class="nav__brand-title d-none d-md-inline">Arya Music Festival</span> -->
     </div>
 
     <div class="collapse navbar-collapse" id="navbarToggler">
-
-      <ul class="navbar-nav nav-list mr-auto mr-md-0 ml-md-auto">
-        <li class="nav nav-item mx-1 mx-lg-2 active">
-          <a class="nav-link" href="./index.html">Home</a>
+      <ul class="nav__menu-list navbar-nav mr-auto mr-md-0 ml-md-auto">
+        <li class="nav__menu-item nav nav-item mx-3 my-2 my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Grups" href="./grups.html">Grups</a>
         </li>
-        <li class="nav nav-item mx-1 mx-lg-2">
-          <a class="nav-link" href="./grups.html">Grups</a>
+        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Història" href="./historia.html">Història</a>
         </li>
-        <li class="nav nav-item mx-1 mx-lg-2">
-          <a class="nav-link" href="./historia.html">Història</a>
-        </li>
-        <li class="nav-item mx-1 mx-lg-2">
-          <a class="nav-link" href="./contacta.html">Contacte</a>
+        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Contacte" href="./contacta.html">Contacte</a>
         </li>
       </ul>
 
@@ -52,166 +47,51 @@
 
 
   <main class="main">
-    <!-- <div class="area">
-      <h2 class="area__title">Education and training <i class="fas fa-user-graduate"></i></h2>
-      <ul class="area__list">
-        <li class="area__list__skill">
-          <div>
-            <span class="area__list__skill--title">MSc in Development of sites and Web Applications</span> <span
-              class="area__list__skill--separator">&bull;</span> In progress
-          </div>
-          <div>
-            Open University of Catalonia <span class="area__list__skill--separator">&bull;</span> Barcelona <span
-              class="area__list__skill--separator">&bull;</span> Spain
-          </div>
-        </li>
-        <li class="area__list__skill">
-          <div>
-            <span class="area__list__skill--title">BS in Information Technology</span> <span
-              class="area__list__skill--separator">&bull;</span> January
-            2020
-          </div>
-          <div>
-            Open University of Catalonia <span class="area__list__skill--separator">&bull;</span> Barcelona <span
-              class="area__list__skill--separator">&bull;</span> Spain
-          </div>
-        </li>
-        <li class="area__list__skill">
-          <div>
-            <span class="area__list__skill--title">CCNA R&S: Introduction to Networks, Scaling Networks and Connecting
-              Networks</span>
-            <span class="area__list__skill--separator">&bull;</span> July 2019
-          </div>
-          <div>
-            Cisco Networking Academy
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="area">
-      <h2 class="area__title">Work experience <i class="fas fa-building"></i></h2>
-      <ul class="area__list">
-        <li class="area__list__skill">
-          <div>
-            <span class="area__list__skill--title">Nextec Technological Projects</span> <span
-              class="area__list__skill--separator">&bull;</span> January
-            2017 - December 2017
-          </div>
-          <div>
-            Vila-seca <span class="area__list__skill--separator">&bull;</span> Tarragona <span
-              class="area__list__skill--separator">&bull;</span> Spain
-          </div>
-          <div class="area__list__skill--explanation">
-            Touchscreens, audiovisual equipment and computer deployment. Network enhancements. Programing
-            Java applications.
-          </div>
-        </li>
-        <li class="area__list__skill">
-          <div>
-            <span class="area__list__skill--title">Grup Comm Technology Tarragona Lleida</span> <span
-              class="area__list__skill--separator">&bull;</span>
-            July
-            2010 - January 2017
-          </div>
-          <div>
-            Constantí <span class="area__list__skill--separator">&bull;</span> Tarragona <span
-              class="area__list__skill--separator">&bull;</span> Spain
-          </div>
-          <div class="area__list__skill--explanation">
-            Interactive whiteboards, audiovisual equipment and computer deployment. Existing network
-            enhancements.
-          </div>
-        </li>
-        <li class="area__list__skill">
-          <div>
-            <span class="area__list__skill--title">Solucions d'Assessorament Gestió i Implementació Audiovisual i
-              Informàtica de
-              Catalunya</span>
-            <span class="area__list__skill--separator">&bull;</span> August 2009 - July 2010
-          </div>
-          <div>
-            Constantí <span class="area__list__skill--separator">&bull;</span> Tarragona <span
-              class="area__list__skill--separator">&bull;</span> Spain
-          </div>
-          <div class="area__list__skill--explanation">
-            Helpdesk to education centers and business.
-          </div>
-        </li>
-      </ul>
-    </div>
-    <div class="area">
-      <h2 class="area__title">Technical skills <i class="fas fa-desktop"></i></h2>
-      <ul class="area__list">
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">OS</span> <span class="area__list__skill--separator">&bull;</span>
-          Windows, Linux, MacOS
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Web related</span> <span
-            class="area__list__skill--separator">&bull;</span> HTML, CSS, SASS, JS, PHP,
-          SQL, Node.js, NPM, Angular, CodeIgniter, Laravel
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">IDE</span> <span class="area__list__skill--separator">&bull;</span>
-          Visual Studio Code, Eclipse,
-          RStudio,
-          Code Composer Studio, PyCharm, Cisco Packet Tracer
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Programming languages</span> <span
-            class="area__list__skill--separator">&bull;</span> JavaScript, PHP,
-          C,
-          Java, Python, Perl, Bash, R, Cisco IOS
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Software</span> <span
-            class="area__list__skill--separator">&bull;</span> Git, Putty, MS Office, GIMP,
-          Paint.NET, XAMP, draw.io, Vegas PRO, Putty, Oracle VM VirtualBox, Google Apps
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Other computer related skills</span> <span
-            class="area__list__skill--separator">&bull;</span> Embedded
-          Systems, microcontrollers and networks
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Other technical skills</span> <span
-            class="area__list__skill--separator">&bull;</span> Electric
-          knowledge, skilled in the use of tools (hand and electric), technology DIY fan, audiovisual devices
-        </li>
-      </ul>
-    </div>
-    <div class="area">
-      <h2 class="area__title">Personal skills <i class="fas fa-user"></i></h2>
-      <ul class="area__list">
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Languages</span> <span
-            class="area__list__skill--separator">&bull;</span> Catalan and Spanish (Native),
-          English (B2 CEFR)
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Drive licences</span> <span
-            class="area__list__skill--separator">&bull;</span> A2, B
-        </li>
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Character</span> <span
-            class="area__list__skill--separator">&bull;</span> Fast learner, liable,
-          teamwork
-          capable, but also independent worker
-        </li>
-      </ul>
-    </div>
-    <div class="area">
-      <h2 class="area__title">Contact details <i class="fas fa-address-card"></i></h2>
-      <ul class="area__list">
-        <li class="area__list__skill">
-          <span class="area__list__skill--title">Address</span> <span class="area__list__skill--separator">&bull;</span>
-          Linthorpe road, 4, NE3 5JU,
-          Newcastle Upon Tyne (United Kingdom)
-        </li>
+    <h1 class="main__title">Arya Music Festival</h1>
+    <div class="main__video">
+      <div id="main__video" class="main__video__item"></div>
+      <script>
+        var tag = document.createElement('script');
 
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
-      </ul>
-    </div> -->
+        var player;
+        function onYouTubeIframeAPIReady() {
+          player = new YT.Player('main__video', {
+            videoId: 'gzta0TfCkko',
+            playerVars: {
+              'autoplay': 1,
+              'controls': 0
+            },
+            events: {
+              'onReady': onPlayerReady,
+              'onStateChange': onPlayerStateChange
+            }
+          });
+
+        }
+
+        function onPlayerReady(event) {
+          event.target.playVideo();
+          if (event.target.isMuted()) event.target.unMute();
+          event.target.setVolume(100);
+        }
+
+        function onPlayerStateChange(event) {
+          if (event.data == YT.PlayerState.ENDED) {
+            event.target.playVideo();
+          }
+        }
+      </script>
+    </div>
+
+    <p class="main__date"><time datetime="2021-08-15"><a class="link" data-hover="15.08.21" href="#">15.08.21</a></time>
+    </p>
+    <p class="main__place"><a class="link" data-hover="Montbrió del Camp" href="#">Montbrió del Camp</a></p>
+    <div class="main__tickets"><a id="main__tickets__link" href="#">Abonaments</a></div>
+
   </main>
   <script src="./assets/scripts/main.js"></script>
 </body>

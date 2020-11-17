@@ -15,23 +15,25 @@ $lg: 992px;
 $xl: 1200px;
 
 /* Define colors */
-$main-color: #ffc600;
-$secondary-color: #0077b6;
-$text-color: #353535;
+$primary-color: #ffc600;
+$secondary-color: #8c00ff;
+$text-color: #fff;
 $text-color-light: color.scale($text-color, $lightness: 30%);
-$nav-bar-color: #fff;
-$background-color: #fff;
+$nav-bar-color: rgba(255, 255, 255, .6);
+$nav-bar-active-color: #fff;
+$background-color: #000;
 
 /* Define fonts */
-$font-family-sans-serif: 'Roboto', arial, helvetica, sans-serif;
+$font-family-sans-serif: 'Raleway', arial, helvetica, sans-serif;
 $font-family-serif: 'Roboto Slab', georgia, times, serif;
+$font-family-special: 'Gloria Hallelujah', cursive;
 
 /* Define background img */
 $background-image: '../images/background.jpg';
 
 /* bootstrap overrides */
 $navbar-light-color: $nav-bar-color;
-$navbar-light-hover-color: $nav-bar-color;
-$navbar-light-active-color: $nav-bar-color;
-$navbar-nav-link-padding-x:         1rem;
-$navbar-light-toggler-border-color: $nav-bar-color;
+$navbar-light-hover-color: $nav-bar-active-color;
+$navbar-light-active-color: $nav-bar-active-color;
+$navbar-nav-link-padding-x: 0;
+$navbar-light-toggler-border-color: $nav-bar-active-color;

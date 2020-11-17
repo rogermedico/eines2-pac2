@@ -9,6 +9,13 @@ import 'bootstrap';
  * Write any other JavaScript below
  */
 
+function addLinkClassToEntrades(){
+  const mainTickets = document.querySelector('#main__tickets__link');
+  if(window.innerWidth<576) mainTickets.classList.add('link');
+  else mainTickets.classList.remove('link');
+}
+
 (() => {
-  /* Your scripts here */
+  addLinkClassToEntrades();
+  window.addEventListener('resize',()=> addLinkClassToEntrades());
 })();

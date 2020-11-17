@@ -16,14 +16,52 @@ body {
   background-image: url($background-image);
   background-size: cover;
   background-repeat: no-repeat;
-  // background-position: center;
-  background-color: $background-color;
-
 }
 
 .link {
   color: $text-color;
-  text-decoration-color: $secondary-color;
+  text-decoration: none;
+  padding: .1em;
+  position: relative;
+  letter-spacing: 1px;
 
-  &:hover { color: $secondary-color; }
+  &::before,
+  &::after {
+    position: absolute;
+    -webkit-transition: all .35s ease;
+    transition: all .5s ease;
+  }
+
+  &::before {
+    bottom: 0;
+    display: block;
+    height: 3px;
+    width: 0%;
+    content: '';
+    background-color: $primary-color;
+  }
+
+  &::after {
+    left: 0;
+    top: 0;
+    padding: .1em 0;
+    position: absolute;
+    white-space: nowrap;
+    max-width: 0%;
+    overflow: hidden;
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: none;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    width: 100%;
+  }
+
+  &:hover::after {
+    max-width: 100%;
+  }
 }
