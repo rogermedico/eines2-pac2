@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="ca">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="description" content="Arya Music Festival website">
+  <meta name="author" content="Roger Medico Piqué">
+  <title>Arya Music Festival</title>
+  <link rel="stylesheet" href="/main.3a106136.css">
+  <link rel="shortcut icon" href="/favicon.4a53ba07.png" type="image/x-icon">
+  <!-- <script src="https://www.youtube.com/iframe_api"></script> -->
+<script src="/main.3a106136.js"></script></head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light bg-transparent">
+
+    <button class="navbar-toggler mr-auto" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="navbar-brand ml-auto mr-0">
+      <a class="nav__brand-link" href="/index.html">
+        <img class="nav__brand-img" src="/logo2.67fbaac5.png" alt="logo">
+      </a>
+      <!-- <span class="nav__brand-title d-none d-md-inline">Arya Music Festival</span> -->
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbarToggler">
+      <ul class="nav__menu-list navbar-nav mr-auto mr-md-0 ml-md-auto">
+        <li class="nav__menu-item nav nav-item mx-3 my-2 my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Grups" href="/grups.html">Grups</a>
+        </li>
+        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Història" href="/historia.html">Història</a>
+        </li>
+        <li class="nav__menu-item nav nav-item mx-3 my-2  my-md-0">
+          <a class="nav__menu-link nav-link" data-hover="Contacte" href="/contacta.html">Contacte</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+  <main class="main">
+    <h1 class="main__title">Arya Music Festival</h1>
+    <div class="main__video">
+      <div id="main__video" class="main__video__item"></div>
+      <script>var tag = document.createElement('script');
+tag.src = "https://www.youtube.com/iframe_api";
+var firstScriptTag = document.getElementsByTagName('script')[0];
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+var player;
+
+function onYouTubeIframeAPIReady() {
+  player = new YT.Player('main__video', {
+    videoId: 'gzta0TfCkko',
+    playerVars: {
+      'autoplay': 1,
+      'controls': 0
+    },
+    events: {
+      'onReady': onPlayerReady,
+      'onStateChange': onPlayerStateChange
+    }
+  });
+}
+
+function onPlayerReady(event) {
+  event.target.playVideo();
+  if (event.target.isMuted()) event.target.unMute();
+  event.target.setVolume(100);
+}
+
+function onPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.ENDED) {
+    event.target.playVideo();
+  }
+}</script>
+    </div>
+
+    <p class="main__date"><time datetime="2021-08-15"><a class="link" data-hover="15.08.21" href="#">15.08.21</a></time>
+    </p>
+    <p class="main__place"><a class="link" data-hover="Montbrió del Camp" href="#">Montbrió del Camp</a></p>
+    <div class="main__tickets"><a id="main__tickets__link" href="#">Abonaments</a></div>
+
+  </main>
+  <script src="/main.df924a13.js"></script>
+</body>
+
+</html>
