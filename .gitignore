@@ -178,3 +178,4 @@ $RECYCLE.BIN/
 ### UOC Boilerplate ###
 .cache
 .cache-loader
+dist
