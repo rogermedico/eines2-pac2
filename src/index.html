@@ -10,7 +10,6 @@
   <title>Arya Music Festival</title>
   <link rel="stylesheet" href="./assets/styles/main.scss">
   <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-icon">
-  <script src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body>
@@ -51,11 +50,10 @@
     <div class="main__video">
       <div id="main__video" class="main__video__item"></div>
       <script>
-        // var tag = document.createElement('script');
-
-        // tag.src = "https://www.youtube.com/iframe_api";
-        // var firstScriptTag = document.getElementsByTagName('script')[0];
-        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        var tag = document.createElement('script');
+        tag.src = "https://www.youtube.com/iframe_api";
+        var firstScriptTag = document.getElementsByTagName('script')[0];
+        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 
         var player;
         function onYouTubeIframeAPIReady() {
