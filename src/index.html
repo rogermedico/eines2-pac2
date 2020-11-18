@@ -48,43 +48,10 @@
   <main class="main">
     <h1 class="main__title">Arya Music Festival</h1>
     <div class="main__video">
-      <div id="player" class="main__video__item"></div>
-      <script>
-        var tag = document.createElement('script');
-        tag.src = "https://www.youtube.com/iframe_api";
-        var firstScriptTag = document.getElementsByTagName('script')[0];
-        firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-        var player;
-        function onYouTubeIframeAPIReady() {
-          player = new YT.Player('player', {
-            videoId: 'gzta0TfCkko',
-            playerVars: {
-              'autoplay': 1,
-              'controls': 0,
-              'loop': 1,
-              'origin': 'https://eines2pac2uoc.netlify.app',
-            },
-            events: {
-              'onReady': onPlayerReady,
-              'onStateChange': onPlayerStateChange
-            }
-          });
-        }
-
-        function onPlayerReady(event) {
-          event.target.playVideo();
-          if (event.target.isMuted()) event.target.unMute();
-          event.target.setVolume(100);
-        }
-
-        function onPlayerStateChange(event) {
-          if (event.data == YT.PlayerState.ENDED) {
-            event.target.playVideo();
-          }
-        }
-
-      </script>
+      <iframe class="main__video__item" width="560" height="315"
+        src="https://www.youtube.com/embed/gzta0TfCkko?controls=0&autoplay=1&loop=1" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
     </div>
 
     <p class="main__date"><time datetime="2021-08-15"><a class="link" data-hover="15.08.21" href="#">15.08.21</a></time>
