@@ -18,6 +18,7 @@ $xl: 1200px;
 $primary-color: #ffc600;
 $secondary-color: #8c00ff;
 $text-color: #fff;
+$text-color-secondary: rgba($text-color, .5);
 $text-color-light: color.scale($text-color, $lightness: 30%);
 $nav-bar-color: rgba(255, 255, 255, .6);
 $nav-bar-active-color: #fff;
