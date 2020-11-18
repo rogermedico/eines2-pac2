@@ -1,0 +1,31 @@
+/**
+ * Contacta page rules
+ */
+
+.contacta__title {
+  margin: 0;
+  padding-bottom: 1rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: $text-color;
+  font-family: $font-family-special;
+  text-shadow: 2px -2px rgba($primary-color, .3);
+
+  @media (min-width: $sm) { font-size: 3.3rem; }
+
+  @media (min-width: $md) {
+    font-size: 3.5rem;
+    letter-spacing: .15rem;
+  }
+
+  @media (min-width: $lg) {
+    font-size: 4.5rem;
+    letter-spacing: .3rem;
+  }
+
+  @media (min-width: $xl) {
+    font-size: 5rem;
+    letter-spacing: .5rem;
+  }
+}

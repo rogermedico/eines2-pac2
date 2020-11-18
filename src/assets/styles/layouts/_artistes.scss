@@ -2,6 +2,8 @@
  * Grups page rules
  */
 
+.special-body-background-size { background-size: contain; }
+
 .grups__title {
   margin: 0;
   padding-bottom: 1rem;
@@ -34,13 +36,15 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  background-color: rgba($background-color, .2);
+  background-color: rgba($background-color-light, .2);
   border-radius: 15px;
 }
 
 .artist {
   flex: 0 1 70%;
   text-align: center;
+
+
 
   @media (min-width: $sm) { flex: 0 1 35%; }
 
@@ -52,8 +56,10 @@
   margin-right: auto;
   margin-left: auto;
   padding: .5rem;
-  background-color: $background-color;
+  background-color: $background-color-light;
   border-radius: 10px;
+
+  &:hover { box-shadow: 0 4px 8px 0 rgba($primary-color, .7), 0 6px 20px 0 rgba($primary-color, .7); }
 }
 
 .artist__image {

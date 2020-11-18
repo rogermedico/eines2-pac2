@@ -22,7 +22,8 @@ $text-color-secondary: rgba($text-color, .5);
 $text-color-light: color.scale($text-color, $lightness: 30%);
 $nav-bar-color: rgba(255, 255, 255, .6);
 $nav-bar-active-color: #fff;
-$background-color: #101010;
+$background-color: #000;
+$background-color-light: #101010;
 
 /* Define fonts */
 $font-family-sans-serif: 'Raleway', arial, helvetica, sans-serif;
