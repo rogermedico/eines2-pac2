@@ -43,9 +43,9 @@
   </nav>
   <main class="contact mb-md-5">
     <h1 class="contact__title">Contact</h1>
+    <div id="alert_container"></div>
     <div class="contact__container container col-10 offset-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 px-4">
-
-      <form class="pb-3" name="contact-form" method="POST" data-netlify="true">
+      <form class="pb-3" name="contact-form" method="POST" data-netlify="true" action="contact.html?s=1">
         <div class="form-group">
           <div class="form__field">
             <label for="name">Name</label>
@@ -72,7 +72,7 @@
             </label>
           </div>
         </div>
-        <button type="submit" class="form__submit btn btn-secondary mx-auto mt-3 mb-2 d-block">Send</button>
+        <button type="submit" class="form__submit btn btn-secondary mx-auto mt-3 mb-2 d-block" onclick="">Send</button>
       </form>
 
     </div>
