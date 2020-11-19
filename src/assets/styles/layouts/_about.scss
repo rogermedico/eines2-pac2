@@ -38,18 +38,18 @@
 }
 
 .about__text {
-  width: 90%;
+  width: 95%;
   padding: 1rem;
   border-left: 3px solid $primary-color;
   font-size: 1rem;
-  font-weight: 600;
-
+  
   @media (min-width: $md) {
-    width: 80%;
+    width: 85%;
     font-size: 1.2rem;
+    font-weight: 600;
   }
 
-  @media (min-width: $lg) { width: 60%; }
+  @media (min-width: $lg) { width: 80%; }
 }
 
 .year__list {
