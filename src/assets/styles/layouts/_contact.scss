@@ -2,7 +2,7 @@
  * Contacta page rules
  */
 
-.contacta__title {
+.contact__title {
   margin: 0;
   margin-bottom: 2rem;
   padding-bottom: 1rem;
@@ -30,3 +30,12 @@
     letter-spacing: .5rem;
   }
 }
+
+.contact__container {
+  background-color: rgba($background-color-light, .7);
+  border-radius: 15px;
+}
+
+.form__field { padding-top: 1rem; }
+
+.form__submit { font-size: 1.2rem; }

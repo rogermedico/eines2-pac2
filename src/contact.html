@@ -41,9 +41,38 @@
 
     </div>
   </nav>
-  <main class="contacta mb-md-5">
-    <h1 class="contacta__title">Contact</h1>
-    <div class="container">
+  <main class="contact mb-md-5">
+    <h1 class="contact__title">Contact</h1>
+    <div class="contact__container container col-10 offset-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 px-4">
+
+      <form class="pb-3" name="contact-form" method="POST" data-netlify="true">
+        <div class="form-group">
+          <div class="form__field">
+            <label for="name">Name</label>
+            <input id="name" class="form-control" type="text" placeholder="John Smith" required>
+          </div>
+          <div class="form__field">
+            <label for="email">Email</label>
+            <input id="email" class="form-control" type="email" placeholder="john.smith@gmail.com" required>
+          </div>
+          <div class="form__field">
+            <label for="message">Message</label>
+            <textarea id="message" class="form-control" rows="3" required></textarea>
+          </div>
+        </div>
+
+
+        <div class="form-group">
+          <div class="form-check">
+            <input id="privacy" class="form-check-input" type="checkbox" required>
+            <label class="form-check-label" for="privacy">
+              I have reviewed and agree to Arya Music Festival's <div class="d-inline-block"><a class="link"
+                  href="#">Privacy Policy</a></div>
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="form__submit btn btn-secondary mx-auto mt-3 mb-2 d-block">Send</button>
+      </form>
 
     </div>
   </main>
