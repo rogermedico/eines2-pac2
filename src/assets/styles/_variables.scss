@@ -36,12 +36,10 @@ $font-family-special: 'Gloria Hallelujah', cursive;
 $background-image: '../images/background.jpg';
 
 /* bootstrap overrides */
-
 $theme-colors: (
-  "primary": $primary-color,
-  "secondary": $secondary-color
+  'primary': $primary-color,
+  'secondary': $secondary-color
 );
-
 $navbar-light-color: $nav-bar-color;
 $navbar-light-hover-color: $nav-bar-active-color;
 $navbar-light-active-color: $nav-bar-active-color;
