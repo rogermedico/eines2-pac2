@@ -40,12 +40,14 @@
 }
 
 .artist {
-  flex: 0 1 70%;
+  flex: 0 1 80%;
   text-align: center;
 
-  @media (min-width: $sm) { flex: 0 1 35%; }
+  @media (min-width: $sm) { flex: 0 1 80%; }
 
-  @media (min-width: $md) { flex: 0 1 25%; }
+  @media (min-width: $md) { flex: 0 1 40%; }
+
+  @media (min-width: $lg) { flex: 0 1 25%; }
 }
 
 .artist__figure {
@@ -69,4 +71,9 @@
 .artist__caption {
   display: inline-block;
   margin-top: .5rem;
+  font-size: 1rem;
+
+  @media (min-width: $lg) { font-size: 0.8rem; }
+
+  @media (min-width: $xl) { font-size: 1rem; }
 }
