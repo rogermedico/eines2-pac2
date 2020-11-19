@@ -10,12 +10,14 @@ import 'bootstrap';
  */
 
 function addLinkClassToEntrades(){
-  const mainTickets = document.querySelector('#main__tickets__link');
-  if(window.innerWidth<576) mainTickets.classList.add('link');
-  else mainTickets.classList.remove('link');
+  const mainTickets = document.querySelector('#home__tickets__link');
+  if(mainTickets) {
+    if(window.innerWidth<576) mainTickets.classList.add('link');
+    else mainTickets.classList.remove('link');
+  }
 }
 
 (() => {
   addLinkClassToEntrades();
-  window.addEventListener('resize',()=> addLinkClassToEntrades());
+  window.addEventListener('resize', addLinkClassToEntrades);
 })();

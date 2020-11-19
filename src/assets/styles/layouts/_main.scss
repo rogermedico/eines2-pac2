@@ -14,8 +14,14 @@ body {
   background-color: $background-color;
   color: $text-color;
   background-image: url($background-image);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+
+  @media (min-width: $md) { background-size: cover; }
+}
+
+.body {
+  background-size: contain;
 }
 
 .link {
