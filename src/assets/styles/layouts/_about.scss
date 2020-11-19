@@ -52,11 +52,17 @@
   @media (min-width: $lg) { width: 60%; }
 }
 
-.year {
+.year__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.year__item {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
-  margin-bottom: 3rem;
+  margin-bottom: 0 0 3rem 0;
 
   @media (min-width: $lg) { flex-wrap: nowrap; }
 
