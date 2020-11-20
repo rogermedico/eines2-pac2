@@ -7,13 +7,6 @@
 /* Tell fontawesome where his files are located */
 $fa-font-path: '../../../node_modules/@fortawesome/fontawesome-free/webfonts';
 
-/* Define media queries breakpoints */
-$xs: 0;
-$sm: 576px;
-$md: 768px;
-$lg: 992px;
-$xl: 1200px;
-
 /* Define colors */
 $primary-color: #ffc600;
 $secondary-color: #8c00ff;
@@ -34,14 +27,3 @@ $font-family-special: 'Gloria Hallelujah', cursive;
 
 /* Define background img */
 $background-image: '../images/background.jpg';
-
-/* bootstrap overrides */
-$theme-colors: (
-  'primary': $primary-color,
-  'secondary': $secondary-color
-);
-$navbar-light-color: $nav-bar-color;
-$navbar-light-hover-color: $nav-bar-active-color;
-$navbar-light-active-color: $nav-bar-active-color;
-$navbar-nav-link-padding-x: 0;
-$navbar-light-toggler-border-color: $nav-bar-active-color;

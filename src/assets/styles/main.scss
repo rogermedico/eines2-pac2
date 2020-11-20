@@ -19,6 +19,18 @@
 @import '~@fortawesome/fontawesome-free/scss/regular';
 
 /**
+ * Import variable overrides
+ */
+
+@import 'bootstrap-overrides';
+
+/**
+ * Import user variables defined based on imported ones
+ */
+
+@import 'media-queries';
+
+/**
  * Import layouts
  * It's a best practice to use a partial for each page
  */
