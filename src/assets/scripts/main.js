@@ -55,7 +55,7 @@ function displayAlert(){
 
   /* take alert empty container and make the alert */
   const alertContainer = document.querySelector('#alert_container');
-  alertContainer.classList.add('container', 'alert', 'alert-dismissible', 'fadeIn', 'fade','show', 'col-10', 'offset-1', 'col-sm-8', 'offset-sm-2', 'col-lg-6', 'offset-lg-3', 'alert-success');
+  alertContainer.classList.add('container', 'alert', 'alert-dismissible', 'fade-in', 'fade','show', 'col-10', 'offset-1', 'col-sm-8', 'offset-sm-2', 'col-lg-6', 'offset-lg-3', 'alert-success');
   alertContainer.setAttribute('role', 'alert');
   alertContainer.innerHTML = 'Message <strong>successfully</strong> sent';
 
