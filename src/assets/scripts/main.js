@@ -4,6 +4,7 @@
  */
  
 import 'bootstrap';
+import $ from 'jquery';
 
 /**
  * Write any other JavaScript below
@@ -45,20 +46,24 @@ function formSubmited(){
 }
 
 function displayAlert(){
-  const alert = document.querySelector('#alert_container');
-  alert.classList.add('container', 'alert', 'alert-dismissible', 'fadeIn', 'fade','show', 'col-10', 'offset-1', 'col-sm-8', 'offset-sm-2', 'col-lg-6', 'offset-lg-3', 'alert-success');
-  alert.setAttribute('role', 'alert');
-  alert.innerHTML = 'Message <strong>successfully</strong> sent';
+  const alertContainer = document.querySelector('#alert_container');
+  alertContainer.classList.add('container', 'alert', 'alert-dismissible', 'fadeIn', 'fade','show', 'col-10', 'offset-1', 'col-sm-8', 'offset-sm-2', 'col-lg-6', 'offset-lg-3', 'alert-success');
+  alertContainer.setAttribute('role', 'alert');
+  alertContainer.innerHTML = 'Message <strong>successfully</strong> sent';
   const button = document.createElement('button');
   button.type = 'button';
   button.setAttribute('aria-label','Close');
   button.setAttribute('data-dismiss','alert');
-  alert.appendChild(button);
+  alertContainer.appendChild(button);
   const span = document.createElement('span');
   span.setAttribute('aria-hidden','true');
   span.innerHTML = '&times';
   button.appendChild(span);
   button.classList.add('close');
+  $('.alert').alert();
+  window.setTimeout(()=>{
+    $('.alert').alert('close');
+  },5000);
 }
 
 (() => {
